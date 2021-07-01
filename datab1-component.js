@@ -169,7 +169,7 @@ class Datab1 extends HTMLElement {
 
         //input
         let input = document.createElement('textarea');
-        input.value = submission.query;
+
 
         let feedback = document.createElement('div');
 
@@ -178,7 +178,8 @@ class Datab1 extends HTMLElement {
             //complete
             let span = document.createElement("span")
             let p = document.createElement("p")
-
+            input.value = submission.query;
+            
             switch(submission.statusId){
                 case 0: {
                     feedback.className = "feedback pending";
