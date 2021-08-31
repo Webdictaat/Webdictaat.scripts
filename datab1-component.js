@@ -191,12 +191,12 @@ class Datab1 extends HTMLElement {
                     span.innerText = "Well done!";
                     p.innerText = "You completed this assignment on " + new Date(submission.timestamp).toDateString()
                 };break;
-                case 3: {
+                default: {
                     feedback.className = "feedback wrong";
                     span.innerText = "Oh snap!";
                     p.innerText = submission.message;
                     p.innerText += "/r /r Change a few things up and try submitting again." 
-                }
+                };
             }
 
             feedback.appendChild(span);
