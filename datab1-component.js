@@ -1,6 +1,6 @@
 const template = document.createElement('template');
 
-let url = "https://webdictaat.aii.avans.nl/apis/databases/assignments/";
+let url = "http://webdictaat.aii.avans.nl/apis/databases/assignments/";
 //let url = "https://localhost:5001/assignments/";
 
 template.innerHTML = `
